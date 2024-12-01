@@ -1,0 +1,118 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #1f4037, #99f2c8);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 400px;
+    backdrop-filter: blur(10px);
+}
+
+h1 {
+    font-size: 1.5rem; /* Ajusta o tamanho para caber em uma linha */
+    margin-bottom: 20px;
+    color: #fff;
+    white-space: nowrap; /* Garante que fique em uma única linha */
+    overflow: visible; /* Permite que o texto completo seja exibido */
+    text-overflow: unset; /* Remove as reticências */
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+textarea, input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    font-family: 'Arial', sans-serif; /* Garante a mesma fonte */
+}
+
+textarea {
+    resize: none;
+    height: 100px;
+}
+
+textarea::placeholder,
+input::placeholder {
+    color: #ccc;
+}
+
+.separator {
+    border: none;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.5); /* Cor suave para combinar com o design */
+    margin: 20px 0; /* Espaçamento acima e abaixo da linha */
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 15px;
+    margin: 5px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #4caf50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 120px; /* Define uma largura fixa para todos os botões */
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.copy-btn {
+    background-color: #3CB371; /* Cor verde suave e compatível com o design */
+    margin: 10px auto 0; /* Centraliza o botão */
+    display: block; /* Necessário para centralizar */
+    width: fit-content;
+    padding: 10px 20px; /* Ajusta tamanho */
+    font-size: 14px;
+}
+
+.copy-btn:hover {
+    background-color: #2E8B57; /* Verde mais escuro ao passar o mouse */
+}
+
+.result {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#output {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    border-radius: 5px;
+    word-break: break-word;
+    margin-top: 10px;
+}
